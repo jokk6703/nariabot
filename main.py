@@ -23,6 +23,9 @@ async def on_message(message):
 
     if message.content.startswith("!나리아"):
         await client.send_message(channel, "안녕하세요! 나리아 봇입니다. 명령어를 알고 싶다면 !나리아 도움이라는 명령어를 사용하시면 됩니다.")
+    
+    if message.content.startswith("!나리아 도움"):
+        await client.send_message(channel, "아직은 명령어가 없습니다.")
 
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
