@@ -22,7 +22,7 @@ async def on_message(message):
     channel = message.channel
     
     if message.content.startswith("!나리아"):
-        await client.send_message(channel, "안녕하세요! 나리아 봇입니다.")
+        await client.send_message(channel, "안녕하세요! 나리아 봇입니다. :)")
 
 access_token = os.environ["BOT_TOKEN"]
 client.run(access_token)
